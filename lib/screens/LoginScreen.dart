@@ -83,15 +83,15 @@ class _LoginScreenState extends State<LoginScreen> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          margin: const EdgeInsets.all(5),
-          padding: const EdgeInsets.all(20),
-          height: MediaQuery.of(context).size.height * 0.4,
-          width: MediaQuery.of(context).size.width * 0.8,
-          decoration: BoxDecoration(
-              color: const Color(0xffF3F3F5),
-              borderRadius: BorderRadius.circular(20)),
-          child: SingleChildScrollView(
+        SingleChildScrollView(
+          child: Container(
+            margin: const EdgeInsets.all(5),
+            padding: const EdgeInsets.all(20),
+            height: MediaQuery.of(context).size.height * 0.4,
+            width: MediaQuery.of(context).size.width * 0.8,
+            decoration: BoxDecoration(
+                color: const Color(0xffF3F3F5),
+                borderRadius: BorderRadius.circular(20)),
             child: Form(
               autovalidateMode: AutovalidateMode.onUserInteraction,
               key: _formKey,
@@ -186,7 +186,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
-        )
+        ),
       ],
     );
   }
@@ -211,7 +211,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: SvgPicture.asset(
               "assets/images/wave-grey_down.svg",
               width: MediaQuery.of(context).size.width * 1,
-              height: MediaQuery.of(context).size.width * 0.3,
+              height: MediaQuery.of(context).size.width * 0.25,
             )));
   }
 }
