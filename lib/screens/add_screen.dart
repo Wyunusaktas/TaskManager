@@ -255,7 +255,7 @@ Container waveUp() {
       opacity: 0.7,
       child: SvgPicture.asset(
         "assets/images/wave_purple_up.svg",
-        height: 200,
+        height: 150,
         width: 100,
       ),
     ),
