@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311080639350",
+    "project_id": "stajuygulamasi-86373",
+    "storage_bucket": "stajuygulamasi-86373.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311080639350:android:040b71c6cc3f0d65af7857",
+        "android_client_info": {
+          "package_name": "com.pn6.etkinlikuygulamasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSC2ZK6ufAfhli_l_TdWiN3IosYbum1co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

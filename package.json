@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^7.6.0",
+    "firebase-admin": "^12.1.0"
+  }
+}
