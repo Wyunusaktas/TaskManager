@@ -65,7 +65,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
           waveUp(),
           Positioned.fill(
             top: 100,
-            bottom: 0,
+            bottom: 100,
             child: Container(
               padding: const EdgeInsets.all(8.0),
               child: currentUserEmail != null

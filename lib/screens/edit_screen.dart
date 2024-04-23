@@ -226,28 +226,28 @@ class _EditProjectScreenState extends State<EditProjectScreen> {
   }
 }
 
-Positioned waveUp() {
-  return Positioned(
-    top: 0,
+Container waveUp() {
+  return Container(
+    alignment: Alignment.topCenter,
     child: Opacity(
       opacity: 0.7,
       child: SvgPicture.asset(
         "assets/images/wave_purple_up.svg",
-        height: 150,
+        height: 200,
         width: 100,
       ),
     ),
   );
 }
 
-Positioned waveDown() {
-  return Positioned(
-    bottom: 0,
+Container waveDown() {
+  return Container(
+    alignment: Alignment.bottomCenter,
     child: Opacity(
       opacity: 0.1,
       child: SvgPicture.asset(
         "assets/images/wave-grey_down.svg",
-        height: 120,
+        height: 150,
         width: 100,
       ),
     ),
