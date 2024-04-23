@@ -24,7 +24,6 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
     });
   }
 
-  // Bildirimi silmek için fonksiyon
   void deleteNotification(String notificationId) {
     FirebaseFirestore.instance
         .collection('Notifications')
@@ -32,7 +31,6 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
         .delete();
   }
 
-  // Tüm bildirimleri silmek için fonksiyon
   void deleteAllNotifications(List<DocumentSnapshot> notifications) {
     for (var notification in notifications) {
       deleteNotification(notification.id);
@@ -50,7 +48,6 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
             icon: const Icon(Icons.delete),
             onPressed: () {
               if (currentUserEmail != null) {
-                // Sadece görünen belgeleri silmek için Stream'den alınan verilere erişiyoruz
                 FirebaseFirestore.instance
                     .collection('Notifications')
                     .where('assignedEmail', isEqualTo: currentUserEmail)

@@ -89,7 +89,7 @@ class _AddProjectScreenState extends State<AddProjectScreen> {
             Expanded(
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.8,
-                height: 850,
+                height: MediaQuery.of(context).size.height * 1,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(width: 2),
@@ -223,7 +223,7 @@ class _AddProjectScreenState extends State<AddProjectScreen> {
                       const SizedBox(height: 16.0),
                       ElevatedButton(
                         onPressed: _addProject,
-                        child: Text('Add'),
+                        child: const Text('Add'),
                       ),
                       const SizedBox(height: 50.0),
                     ],
@@ -239,7 +239,7 @@ class _AddProjectScreenState extends State<AddProjectScreen> {
                         builder: (context) => MainPage(),
                       ));
                 },
-                icon: (Icon(Icons.arrow_back))),
+                icon: (const Icon(Icons.arrow_back))),
             waveDown(),
           ],
         ),

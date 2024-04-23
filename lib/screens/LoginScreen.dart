@@ -43,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 SvgPicture.asset(
                   "assets/images/welcome.svg",
-                  height: 100,
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
                 const SizedBox(
                   height: 50,
@@ -86,8 +86,8 @@ class _LoginScreenState extends State<LoginScreen> {
         Container(
           margin: const EdgeInsets.all(5),
           padding: const EdgeInsets.all(20),
-          height: 320,
-          width: 350,
+          height: MediaQuery.of(context).size.height * 0.4,
+          width: MediaQuery.of(context).size.width * 0.8,
           decoration: BoxDecoration(
               color: const Color(0xffF3F3F5),
               borderRadius: BorderRadius.circular(20)),
@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       prefixIcon: const Icon(Icons.email),
                     ),
                   ),
-                  const SizedBox(height: 16.0),
+                  const SizedBox(height: 30.0),
                   TextFormField(
                     controller: _passwordcontroller,
                     obscureText: true,
@@ -166,7 +166,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           minWidth: MediaQuery.of(context).size.width * 0.6,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20)),
-                          color: Color(0xFF3F3D56),
+                          color: const Color(0xFF3F3D56),
                           child: const Text(
                             "Login",
                             style: TextStyle(color: Colors.white),
@@ -179,7 +179,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => RegisterScreen(),
+                            builder: (context) => const RegisterScreen(),
                           )),
                       child: const Text("Sign Up")),
                 ],
@@ -198,8 +198,8 @@ class _LoginScreenState extends State<LoginScreen> {
             opacity: 0.7,
             child: SvgPicture.asset(
               "assets/images/wave_purple_up.svg",
-              height: 250,
-              width: 100,
+              width: MediaQuery.of(context).size.width * 1,
+              height: MediaQuery.of(context).size.width * 0.5,
             )));
   }
 
@@ -210,8 +210,8 @@ class _LoginScreenState extends State<LoginScreen> {
             opacity: 0.1,
             child: SvgPicture.asset(
               "assets/images/wave-grey_down.svg",
-              height: 300,
-              width: 100,
+              width: MediaQuery.of(context).size.width * 1,
+              height: MediaQuery.of(context).size.width * 0.3,
             )));
   }
 }

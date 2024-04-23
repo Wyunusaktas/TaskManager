@@ -155,8 +155,8 @@ class ProjectListScreen extends StatelessWidget {
             bottom: 18,
             left: 16,
             child: Container(
-              width: 60,
-              height: 60,
+              width: MediaQuery.of(context).size.width * 0.14,
+              height: MediaQuery.of(context).size.width * 0.14,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.purple,
@@ -170,7 +170,8 @@ class ProjectListScreen extends StatelessWidget {
                 ],
               ),
               child: IconButton(
-                icon: Icon(Icons.notifications, color: Colors.white, size: 30),
+                icon: const Icon(Icons.notifications,
+                    color: Colors.white, size: 30),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -184,10 +185,10 @@ class ProjectListScreen extends StatelessWidget {
           ),
           Positioned(
             bottom: 18,
-            right: 200,
+            right: MediaQuery.of(context).size.width * 0.44,
             child: Container(
-              width: 60,
-              height: 60,
+              width: MediaQuery.of(context).size.width * 0.14,
+              height: MediaQuery.of(context).size.width * 0.14,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.purple,
@@ -196,12 +197,12 @@ class ProjectListScreen extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
-                    offset: Offset(0, 3),
+                    offset: const Offset(0, 3),
                   ),
                 ],
               ),
               child: IconButton(
-                icon: Icon(Icons.add, color: Colors.white, size: 30),
+                icon: const Icon(Icons.add, color: Colors.white, size: 30),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -217,8 +218,8 @@ class ProjectListScreen extends StatelessWidget {
             bottom: 18,
             right: 16,
             child: Container(
-              width: 60,
-              height: 60,
+              width: MediaQuery.of(context).size.width * 0.14,
+              height: MediaQuery.of(context).size.width * 0.14,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.purple,
@@ -227,12 +228,13 @@ class ProjectListScreen extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 2,
                     blurRadius: 5,
-                    offset: Offset(0, 3),
+                    offset: const Offset(0, 3),
                   ),
                 ],
               ),
               child: IconButton(
-                icon: Icon(Icons.exit_to_app, color: Colors.white, size: 30),
+                icon: const Icon(Icons.exit_to_app,
+                    color: Colors.white, size: 30),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -250,8 +252,8 @@ class ProjectListScreen extends StatelessWidget {
               opacity: 0.7,
               child: SvgPicture.asset(
                 "assets/images/wave_purple_up.svg",
-                height: 150,
-                width: 100,
+                width: MediaQuery.of(context).size.width * 1,
+                height: MediaQuery.of(context).size.width * 0.3,
               ),
             ),
           ),

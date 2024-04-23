@@ -36,11 +36,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
             Column(
               children: [
                 const SizedBox(
-                  height: 250,
+                  height: 200,
                 ),
                 SvgPicture.asset(
                   "assets/images/welcome.svg",
-                  height: 100,
+                  height: MediaQuery.of(context).size.height * 0.1,
                 ),
                 const SizedBox(
                   height: 50,
@@ -83,8 +83,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
         Container(
           margin: const EdgeInsets.all(5),
           padding: const EdgeInsets.all(20),
-          height: 320,
-          width: 350,
+          height: MediaQuery.of(context).size.height * 0.4,
+          width: MediaQuery.of(context).size.width * 0.8,
           decoration: BoxDecoration(
               color: const Color(0xffF3F3F5),
               borderRadius: BorderRadius.circular(20)),
@@ -181,8 +181,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
             opacity: 0.7,
             child: SvgPicture.asset(
               "assets/images/wave_purple_up.svg",
-              height: 250,
-              width: 100,
+              width: MediaQuery.of(context).size.width * 0.8,
+              height: MediaQuery.of(context).size.height * 0.2,
             )));
   }
 
@@ -193,8 +193,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
             opacity: 0.1,
             child: SvgPicture.asset(
               "assets/images/wave-grey_down.svg",
-              height: 300,
-              width: 100,
+              height: MediaQuery.of(context).size.height * 0.2,
+              width: MediaQuery.of(context).size.width * 0.8,
             )));
   }
 }

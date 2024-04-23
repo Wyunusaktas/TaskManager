@@ -14,7 +14,7 @@ void main() async {
   );
 
   await FirebaseApi().initNotifications();
-  runApp(ProviderScope(child: EtkinlikHome()));
+  runApp(const ProviderScope(child: EtkinlikHome()));
 }
 
 class EtkinlikHome extends StatefulWidget {
@@ -27,6 +27,7 @@ class EtkinlikHome extends StatefulWidget {
 class _EtkinlikHomeState extends State<EtkinlikHome> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, home: LoginScreen());
   }
 }
