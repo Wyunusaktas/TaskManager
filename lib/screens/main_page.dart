@@ -36,7 +36,7 @@ class ProjectListScreen extends StatelessWidget {
             return Center(child: CircularProgressIndicator());
           }
 
-          double centerLeft = MediaQuery.of(context).size.width / 2 - 50;
+          double centerLeft = MediaQuery.of(context).size.width / 2 - 34;
           double centerTop = MediaQuery.of(context).size.height * 0.11;
 
           return Stack(

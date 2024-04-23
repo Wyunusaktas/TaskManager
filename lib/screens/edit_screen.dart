@@ -62,7 +62,7 @@ class _EditProjectScreenState extends State<EditProjectScreen> {
             Expanded(
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.8,
-                height: MediaQuery.of(context).size.width * 0.1,
+                height: MediaQuery.of(context).size.width * 1,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(width: 2),
@@ -72,7 +72,7 @@ class _EditProjectScreenState extends State<EditProjectScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 60.0),
+                      const SizedBox(height: 30.0),
                       TextField(
                         controller: titleController,
                         decoration: InputDecoration(
@@ -247,7 +247,7 @@ Container waveDown() {
       opacity: 0.1,
       child: SvgPicture.asset(
         "assets/images/wave-grey_down.svg",
-        height: 150,
+        height: 100,
         width: 100,
       ),
     ),

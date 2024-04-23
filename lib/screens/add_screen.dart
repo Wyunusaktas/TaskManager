@@ -100,7 +100,7 @@ class _AddProjectScreenState extends State<AddProjectScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 50.0),
+                      const SizedBox(height: 30.0),
                       TextField(
                         controller: _titleController,
                         decoration: InputDecoration(
@@ -269,7 +269,7 @@ Container waveDown() {
       opacity: 0.1,
       child: SvgPicture.asset(
         "assets/images/wave-grey_down.svg",
-        height: 150,
+        height: 100,
         width: 100,
       ),
     ),
